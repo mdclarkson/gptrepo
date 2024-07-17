@@ -46,7 +46,7 @@ os.chdir(os.path.abspath(HERE))
 def _exe(cmd):
     print('Executing "%s"' % cmd)
     # os.system(cmd)
-    subprocess.check_call(cmd, shell=True)
+    subprocess.check_call(cmd, shell=False)
 
 
 def is_tool(name):
